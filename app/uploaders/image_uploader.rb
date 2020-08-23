@@ -10,15 +10,15 @@ class ImageUploader < CarrierWave::Uploader::Base
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
-    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+   "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-　def extension_whitelist
-　  %w(jpg jpeg png)
-　end
+  def extension_whitelist
+  %w(jpg jpeg png)
+  end
   
   def size_range
-    1..10.megabytes
+   1..10.megabytes
   end
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url(*args)
@@ -51,4 +51,4 @@ class ImageUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
-end
+end  
