@@ -12,13 +12,6 @@
              <%= link_to favorites_path(topic_id: topic.id), method: :post do %>
                <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon' %>
              <% end %>
-             <%= link_to likes_path(topic_id: topic.id), method: :post do %>
-              <i class="far fa-heart like-btn" ></i>
-             <% end %>
-            <% else %>
-             <%= link_to likes_path(topic_id: topic.id), method: :delete do %>
-              <i class="far fa-heart unlike-btn"></i>
-             <% end %>
             <% end %>
             <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon' %>
             <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
