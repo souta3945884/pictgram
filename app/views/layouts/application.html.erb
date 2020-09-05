@@ -20,7 +20,7 @@
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
-                <a href="topics">TOPICS</a>
+                <%= link_to "TOPICS",topics_path %>
             </li>
             <li>
               <%= link_to favorites_index_path do %>
