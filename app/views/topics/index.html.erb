@@ -13,9 +13,8 @@
                 <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon' %>
               <% end %>
             <% else %>
-              <%= link_to favorites_path(topic_id: topic.id), method: :delete do %>
-                <i class="fa fa-heart" aria-hidden="true"></i>
-              <% end %>
+              <%= link_to favorites_path(topic_id: topic.id), method: :post do %>
+                <%= image_tag 'icons/icon_2y_24.png', class: 'topic-index-icon' %>
             <% end %>
             
             <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
