@@ -13,8 +13,9 @@
                 <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon' %>
               <% end %>
             <% else %>
-              <%= link_to favorites_path(topic_id: topic.id), method: :post do %>
-                <%= image_tag 'icons/icon_2y_24.png', class: 'topic-index-icon' %>
+              <%= link_to favorites_path(topic_id: topic.id), method: :delete do %>
+                <%= image_tag 'icons/icon_2y/icon_2y_192.png', class: 'topic-index-icon' %>
+              <% end %>
             <% end %>
             
             <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
