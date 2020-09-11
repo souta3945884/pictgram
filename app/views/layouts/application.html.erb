@@ -20,7 +20,9 @@
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
-                <%= link_to "TOPICS",topics_path %>
+              <%= link_to topics_path do %>
+                <%= image_tag 'icons/icon_6m/icon_6m_192.png' %>
+              <% end %>
             </li>
             <li>
               <%= link_to favorites_index_path do %>
