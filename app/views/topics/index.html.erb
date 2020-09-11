@@ -17,6 +17,7 @@
                 <%= image_tag 'icons/icon_2y/icon_2y_192.png', class: 'topic-index-icon2' %>
               <% end %>
             <% end %>
+            <%= topic.favorite_users.count %>
             
             <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
             <p class="topic-text">
