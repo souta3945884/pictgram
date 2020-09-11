@@ -143,7 +143,11 @@ h1, h2 {
   }
 }
 
-.icon-topics {
-  width: 200px;
-  height: 180px;
+.container {
+  .navbar-right {
+    .topic-index-icon3 {
+       width: 200px;
+        height: 180px;
+    }
+  }
 }
