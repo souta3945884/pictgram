@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new
     @comment.user_id = current_user.id
-    @comment.topic_id = params[:topic_id]
+    @comment.topic_id = params[:comment][:topic_id]
     @comment.description = params[:description]
     
     if @comment.save
