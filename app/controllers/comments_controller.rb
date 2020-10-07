@@ -1,7 +1,5 @@
 class CommentsController < ApplicationController
-  def index
-    @comment_topics = current_user.favorite_topics
-  end
+ 
   
   def new
     @comment = Comment.new
