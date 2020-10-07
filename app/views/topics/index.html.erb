@@ -24,8 +24,7 @@
             <% end %>
             <p class="topic-text"><%= topic.description %></p>
             <h2>コメント</h2>
-            <%= @comment.description.each, method:post do |comment| %>
-            <% end %>
+            <%= topic.comment.description %>
           </div>
         </div>
       </div>
