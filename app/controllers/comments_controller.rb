@@ -16,7 +16,13 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to topics_path, success: 'コメントを投稿しました'
     else
-      render action: :new
+      render :new
     end
   end
+  
+  private
+  def comment_params
+    params.require(:comment).permit(:description, :topic_id)
+  end
+  
 end
