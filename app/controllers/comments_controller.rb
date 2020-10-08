@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
     @comment.topic_id = params[:comment][:topic_id]
     @comment.description = params[:comment][:description]
     
-    if @comment.save!
+    if @comment.save
       redirect_to topics_path, success: 'コメントを投稿しました'
     else
       render :new

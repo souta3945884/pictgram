@@ -12,9 +12,9 @@
            <%= f.label :description %>
            <%= f.text_area :description, class: 'form-control' %>
          </div>
-         
-           <%= f.submit '投稿', class: 'btn btn-bla btn-black btn-block %>
-        <% end %>
+         <% if logged_in? %>
+         <%= f.submit '投稿', class: 'btn btn-bla btn-black btn-block %>
+         <% end %>
         <% end %>
       </div>
     </div>
