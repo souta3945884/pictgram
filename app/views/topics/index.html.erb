@@ -23,7 +23,7 @@
             <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
             <% end %>
             <p class="topic-text"><%= topic.description %></p>
-            <%= "/comments/:id/edit"コメント</a></h2>
+            <h2>コメント</h2>
             <% topic.comments.each do |comment| %>
               <%= comment.description %>
             <% end %>
